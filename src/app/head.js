@@ -7,9 +7,45 @@ export default function Head() {
   return (
     <>
       <meta name="theme-color" content="#0f172a" />
-      <link rel="manifest" href="/manifest.json" />
-      <link rel="icon" href="/icon-192x192.png" />
-      <link rel="apple-touch-icon" href="/icon-192x192.png" />
+
+      {/* Manifest */}
+      <link rel="manifest" href="/site.webmanifest" />
+
+      {/* Favicons */}
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="96x96"
+        href="/favicon-96x96.png"
+      />
+      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      <link rel="shortcut icon" href="/favicon.ico" />
+
+      {/* Apple touch icon */}
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/apple-touch-icon.png"
+      />
+
+      {/* Optional favicon ukuran lain, kalau ada */}
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/favicon-16x16.png"
+      />
+
+      {/* Buat iOS full screen mode */}
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+      <meta name="apple-mobile-web-app-title" content="Keuangangku" />
     </>
   );
 }
